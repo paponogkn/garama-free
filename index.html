@@ -54,6 +54,12 @@
       0% { background-position: 0%; }
       100% { background-position: 400%; }
     }
+
+    #mensagem {
+      margin-top: 15px;
+      font-size: 18px;
+      color: #00ff00;
+    }
   </style>
 </head>
 <body>
@@ -63,8 +69,21 @@
     <p>Coloque seu Nick:</p>
     <input type="text" placeholder="Seu nick aqui">
   </div>
-  <a class="botao" href="https://www.roblox.com/share?code=75c7217d14005b488814b9fb6707de0e&type=Server">
-    GERAR GARAMA
-  </a>
+  <button class="botao" id="gerarBtn">GERAR GARAMA</button>
+  <p id="mensagem"></p>
+
+  <script>
+    const btn = document.getElementById('gerarBtn');
+    const mensagem = document.getElementById('mensagem');
+    const link = "https://www.roblox.com/share?code=75c7217d14005b488814b9fb6707de0e&type=Server";
+
+    btn.addEventListener('click', () => {
+      mensagem.textContent = "Redirecionando para o seu servidor...";
+      btn.disabled = true; // evita múltiplos cliques
+      setTimeout(() => {
+        window.location.href = link;
+      }, 6500); // 6,5 segundos
+    });
+  </script>
 </body>
 </html>
