@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GERADOR DE GARAMA</title>
+  <style>
+    body {
+      background-color: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff;
+    }
+
+    img {
+      width: 250px;
+      margin: 20px 0;
+      border-radius: 10px;
+    }
+
+    input {
+      padding: 10px;
+      width: 250px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      text-align: center;
+      outline: none;
+    }
+
+    .botao {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 30px;
+      font-size: 18px;
+      font-weight: bold;
+      background: linear-gradient(90deg, #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff);
+      background-size: 400%;
+      border: none;
+      border-radius: 10px;
+      color: black;
+      cursor: pointer;
+      animation: cores 4s linear infinite;
+      text-decoration: none;
+    }
+
+    @keyframes cores {
+      0% { background-position: 0%; }
+      100% { background-position: 400%; }
+    }
+  </style>
+</head>
+<body>
+  <h1>GERADOR DE GARAMA</h1>
+  <img src="https://static.wikia.nocookie.net/stealabr/images/e/ee/Garamadundung.png/revision/latest?cb=20250816022557" alt="Garama">
+  <div>
+    <p>Coloque seu Nick:</p>
+    <input type="text" placeholder="Seu nick aqui">
+  </div>
+  <a class="botao" href="https://www.roblox.com/share?code=75c7217d14005b488814b9fb6707de0e&type=Server">
+    GERAR GARAMA
+  </a>
+</body>
+</html>
